@@ -7,8 +7,30 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="fontawesome/css/all.min.css">
         <link rel="stylesheet" href="css/templatemo-style.css">
+
+
+
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+        <link rel="stylesheet" type="text/css" href="./style.css" />
+        <script type="module" src="./index.ts"></script>
+
+
     </head>
     <body>
+        <div id="map"></div>
+
+        <!-- 
+         The `defer` attribute causes the callback to execute after the full HTML
+         document has been parsed. For non-blocking uses, avoiding race conditions,
+         and consistent behavior across browsers, consider loading using Promises
+         with https://www.npmjs.com/package/@googlemaps/js-api-loader.
+        -->
+        <script
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6FhHnYEkDLo9Dz83a6FkqnAvh_9kqO8M&callback=initMap&v=weekly"
+          defer
+        ></script>
+
         <!-- Page Loader -->
         <div id="loader-wrapper">
             <div id="loader"></div>
