@@ -7,16 +7,32 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <link rel="stylesheet" href="css/templatemo-style.css">
+    <script type="text/javascript" src="assets/main.bundle.js"></script>
 </head>
 <body>
     <!-- Page Loader -->
     <div id="loader-wrapper">
         <div id="loader"></div>
-
         <div class="loader-section section-left"></div>
         <div class="loader-section section-right"></div>
-
     </div>
+
+    <div id="h5p-container"></div>
+    <script type="text/javascript">
+        const {
+        H5P
+      } = H5PStandalone;
+      async function setup() {
+        await new H5P(document.getElementById('h5p-container'),
+                {
+                  h5pJsonPath: '/game',
+                  frameJs: '/assets/frame.bundle.js',
+                  frameCss: '/assets/styles/h5p.css'
+                });
+      }
+      setup();
+    </script>
+
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
