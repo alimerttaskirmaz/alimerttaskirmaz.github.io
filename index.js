@@ -12,7 +12,6 @@ function initMap() {
       { lat: 40.565, lng: 26.845 },
       { lat: 38.839, lng: 27.282 },
       { lat: 30.646, lng: 29.034 },
-      { lat: 23.515, lng: 34.790 },
     ];
     const flightPath = new google.maps.Polyline({
       path: flightPlanCoordinates,
