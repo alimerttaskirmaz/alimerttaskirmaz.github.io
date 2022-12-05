@@ -17,19 +17,21 @@
         <div class="loader-section section-right"></div>
     </div>
 
-    <div id="h5p-container"></div>
+    <div id="app_h5p"></div>
     <script type="text/javascript">
         const {
         H5P
       } = H5PStandalone;
+      console.log("başla");
       async function setup() {
-        await new H5P(document.getElementById('h5p-container'),
+        await new H5P(document.getElementById('app_h5p'),
                 {
-                  h5pJsonPath: '/game',
-                  frameJs: '/assets/frame.bundle.js',
-                  frameCss: '/assets/styles/h5p.css'
+                  h5pJsonPath: 'memory-game-5-708',
+                  frameJs: 'js/frame.bundle.js',
+                  frameCss: 'css/h5p.css'
                 });
       }
+      console.log("gel");
       setup();
     </script>
 
