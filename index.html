@@ -17,24 +17,6 @@
         <div class="loader-section section-right"></div>
     </div>
 
-    <div id="app_h5p"></div>
-    <script type="text/javascript">
-        const {
-        H5P
-      } = H5PStandalone;
-      console.log("başla");
-      async function setup() {
-        await new H5P(document.getElementById('app_h5p'),
-                {
-                  h5pJsonPath: 'memory-game-5-708',
-                  frameJs: 'js/frame.bundle.js',
-                  frameCss: 'css/h5p.css'
-                });
-      }
-      console.log("gel");
-      setup();
-    </script>
-
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
@@ -63,7 +45,7 @@
         </div>
     </nav>
 
-    <div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" data-image-src="img/hero.jpg">
+    <div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" data-image-src="img/hero.png">
         <!-- <form class="d-flex tm-search-form">
             <input class="form-control tm-search-input" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success tm-search-btn" type="submit">
@@ -71,6 +53,24 @@
             </button>
         </form> -->
     </div>
+
+    <div id="app_h5p"></div>
+    <script type="text/javascript">
+        const {
+        H5P
+      } = H5PStandalone;
+      console.log("başla");
+      async function setup() {
+        await new H5P(document.getElementById('app_h5p'),
+                {
+                  h5pJsonPath: 'memory-game-5-708',
+                  frameJs: 'js/frame.bundle.js',
+                  frameCss: 'css/h5p.css'
+                });
+      }
+      console.log("gel");
+      setup();
+    </script>
 
     <div class="container-fluid tm-container-content tm-mt-60">
         <div class="row mb-4">
