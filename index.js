@@ -16,7 +16,7 @@ function initMap() {
       geodesic: true,
       strokeColor: "#FF0000",
       strokeOpacity: 1.0,
-      strokeWeight: 5,
+      strokeWeight: 4,
     });
   
     flightPath.setMap(map);
