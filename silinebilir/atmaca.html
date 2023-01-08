@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="./style.css" />
 
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script type="module" src="./index.js"></script>
 </head>
 
 <body>
@@ -60,15 +61,11 @@
         <div class="row tm-mb-90">
             <div class="col-xl-5 col-lg-7 col-md-6 col-sm-12">
                 <img src="img/atmaca.jpg" alt="Image" class="img-fluid">
-                <p class="mb-4">
-                <h6>GENEL ÖZELLİKLER</h6><br>
-                Uzun kuyruğu ve nispeten kısa kanatları ile ağaçlık alanlarda ani manevraler yaparak avlanırken sıklıkla gözlemlenebilir. Göğüs, karın ve kanat altı enine sık çizgilidir. Bu çizgiler dişi ve gençlerde gri ve koyu kahverengi, erkeklerde kızıl kahverengi renklerdedir. Göz rengi açık sarı ve truncu renklerde, S şeklindeki kanat firar hattı ve açık renkli kaşı tanımlanmasında yardımcı olur.
-                <br><br>
-                <h6>ÇANAKKALE DAĞILIŞI</h6>
-                A. nissus yıl boyu ormanlık alanlar ve sulak alanlarda avlanırken gözlemlenebilir. Göç dönemlerinde yerli türlerin dışında transit göçer bireyleride sıklıkla gözlemlenir. Bölgemiz için Yerli ve Transit göçer bir türdür.
-                </p>
             </div>
             <div class="col-xl-7 col-lg-5 col-md-6 col-sm-12">
+                <p class="mb-4">
+                    Atmaca hakkında detaylı bilgiler burada yer alacak.
+                </p>
 
                 <div id="map"></div>
                 <!-- 
@@ -78,35 +75,7 @@
                 with https://www.npmjs.com/package/@googlemaps/js-api-loader.
                 -->
                 <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&v=weekly" defer></script>
-
-                <script>
-                    function initMap() {
-                        const map = new google.maps.Map(document.getElementById("map"), {
-                            zoom: 5,
-                            center: { lat: 40, lng: 26 },
-                            mapTypeId: "terrain",
-                        });
-                        const flightPlanCoordinates = [
-                            { lat: 42.718, lng: 24.356 },
-                            { lat: 40.565, lng: 26.845 },
-                            { lat: 38.839, lng: 27.282 },
-                            { lat: 30.646, lng: 29.034 },
-                        ];
-                        const flightPath = new google.maps.Polyline({
-                            path: flightPlanCoordinates,
-                            geodesic: true,
-                            strokeColor: "#FF0000",
-                            strokeOpacity: 1.0,
-                            strokeWeight: 4,
-                        });
-
-                        flightPath.setMap(map);
-                    }
-
-                    window.initMap = initMap;
-                </script>
             </div>
-
         </div>
     </div> <!-- container-fluid, tm-container-content -->
 

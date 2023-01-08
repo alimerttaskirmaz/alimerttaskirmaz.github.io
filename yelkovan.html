@@ -12,7 +12,6 @@
     <link rel="stylesheet" type="text/css" href="./style.css" />
 
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <script type="module" src="./index.js"></script>
 </head>
 
 <body>
@@ -62,11 +61,16 @@
             <div class="col-xl-5 col-lg-7 col-md-6 col-sm-12">
                 <img src="img/yelkovan.jpg" alt="Image" class="img-fluid">
                 <p class="mb-4">
-                    <h6>GENEL ÖZELLİKLER</h6><br>
-                    Uzun mesafe göçerleri olan Yelkovanlar Akdeniz’deki adalarda  ve sarp kayalıklarda ürerler. Geceleri büyük martılar tarafından avlanmaktan kaçındıkları için yuvalarını çukurlara yaparlar.  Balık ve yumuşakçalarla beslenirler. Çanakkale boğazında özellikle sabah ve akşamüstü saatlerinde kalabalık gruplar halinde sürekli geçişler yaparken gözlemlenebilir.
-                    <br><br>
-                    <h6>ÇANAKKALE DAĞILIŞI</h6>
-                    Puffinus yelkouan türü Çanakkale kıyılarına yakın tüm alanlardan gözlenmektedir. Geçiş yoğunlukları mevsimsel olarak değişmektedir.  Zaman zaman kıyıya yaklaşıp gruplar halinde veya bireyler halinde daldıkları veya yüzeyden avlandıkları gözlenmiştir.
+                <h6>GENEL ÖZELLİKLER</h6><br>
+                Uzun mesafe göçerleri olan Yelkovanlar Akdeniz’deki adalarda ve sarp kayalıklarda ürerler. Geceleri
+                büyük martılar tarafından avlanmaktan kaçındıkları için yuvalarını çukurlara yaparlar. Balık ve
+                yumuşakçalarla beslenirler. Çanakkale boğazında özellikle sabah ve akşamüstü saatlerinde kalabalık
+                gruplar halinde sürekli geçişler yaparken gözlemlenebilir.
+                <br><br>
+                <h6>ÇANAKKALE DAĞILIŞI</h6>
+                Puffinus yelkouan türü Çanakkale kıyılarına yakın tüm alanlardan gözlenmektedir. Geçiş yoğunlukları
+                mevsimsel olarak değişmektedir. Zaman zaman kıyıya yaklaşıp gruplar halinde veya bireyler halinde
+                daldıkları veya yüzeyden avlandıkları gözlenmiştir.
                 </p>
             </div>
             <div class="col-xl-7 col-lg-5 col-md-6 col-sm-12">
@@ -79,6 +83,33 @@
                 with https://www.npmjs.com/package/@googlemaps/js-api-loader.
                 -->
                 <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&v=weekly" defer></script>
+
+                <script>
+                    function initMap() {
+                        const map = new google.maps.Map(document.getElementById("map"), {
+                            zoom: 5,
+                            center: { lat: 40, lng: 26 },
+                            mapTypeId: "terrain",
+                        });
+                        const flightPlanCoordinates = [
+                            { lat: 42.718, lng: 24.356 },
+                            { lat: 40.565, lng: 26.845 },
+                            { lat: 38.839, lng: 27.282 },
+                            { lat: 30.646, lng: 29.034 },
+                        ];
+                        const flightPath = new google.maps.Polyline({
+                            path: flightPlanCoordinates,
+                            geodesic: true,
+                            strokeColor: "#FF0000",
+                            strokeOpacity: 1.0,
+                            strokeWeight: 4,
+                        });
+
+                        flightPath.setMap(map);
+                    }
+
+                    window.initMap = initMap;
+                </script>
             </div>
 
         </div>
