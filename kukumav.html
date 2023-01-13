@@ -86,15 +86,17 @@
                 <script>
                     function initMap() {
                         const map = new google.maps.Map(document.getElementById("map"), {
-                            zoom: 5,
+                            zoom: 3,
                             center: { lat: 40, lng: 26 },
                             mapTypeId: "terrain",
                         });
                         const flightPlanCoordinates = [
-                            { lat: 42.718, lng: 24.356 },
-                            { lat: 40.565, lng: 26.845 },
-                            { lat: 38.839, lng: 27.282 },
-                            { lat: 30.646, lng: 29.034 },
+                            { lat: 33.1643, lng: -7.9310 },
+                            { lat: 30.5215, lng: 31.0916 },
+                            { lat: 36.9305, lng: 71.4627},
+                            { lat: 35.3275, lng: 119.0179},
+                            { lat: 48.6605, lng: -4.3079},
+                            { lat: 33.1643, lng: -7.9310 },
                         ];
                         const flightPath = new google.maps.Polyline({
                             path: flightPlanCoordinates,
