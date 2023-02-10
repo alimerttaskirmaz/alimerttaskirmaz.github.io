@@ -29,23 +29,24 @@
                 <i class="fas fa-film mr-2"></i>
                 Gelibolu Yarımadası Kuş Gözlem Projesi
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-1 active" aria-current="page" href="index.html">Gözlemlenen
-                            Kuşlar</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-3" href="about.html">Hakkımızda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-4" href="contact.html">İletişim</a>
-                    </li>
-                </ul>
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link nav-link-1 active" aria-current="page" href="index.html">Gözlemlenen Kuşlar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-1" aria-current="page" href="goc_yollari.html">Göç Yolları</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-3" href="hakkimizda.html">Hakkımızda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-4" href="iletisim.html">İletişim</a>
+                </li>
+            </ul>
             </div>
         </div>
     </nav>
@@ -58,7 +59,7 @@
             <h2 class="col-12 tm-text-primary">Yelkovan</h2>
         </div>
         <div class="row tm-mb-90">
-            <div class="col-xl-5 col-lg-7 col-md-6 col-sm-12">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
                 <img src="img/yelkovan.jpg" alt="Image" class="img-fluid">
                 <audio controls>
                     <source src="audio/yelkovan.mp3" type="audio/mpeg">
@@ -77,48 +78,27 @@
                 daldıkları veya yüzeyden avlandıkları gözlenmiştir.
                 </p>
             </div>
-            <div class="col-xl-7 col-lg-5 col-md-6 col-sm-12">
-
-                <div id="map"></div>
-                <!-- 
-                The `defer` attribute causes the callback to execute after the full HTML
-                document has been parsed. For non-blocking uses, avoiding race conditions,
-                and consistent behavior across browsers, consider loading using Promises
-                with https://www.npmjs.com/package/@googlemaps/js-api-loader.
-                -->
-                <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&v=weekly" defer></script>
-
-                <script>
-                    function initMap() {
-                        const map = new google.maps.Map(document.getElementById("map"), {
-                            zoom: 5,
-                            center: { lat: 40, lng: 26 },
-                            mapTypeId: "terrain",
-                        });
-                        const flightPlanCoordinates = [
-                            { lat: 40.5812, lng: 26.6864 },
-                            { lat: 37.9564, lng: 27.0375 },
-                            { lat: 36.1972, lng: 28.6006 },
-                            { lat: 31.6329, lng: 30.9482 },
-                            { lat: 32.7893, lng: 20.9520 },
-                            { lat: 39.7485, lng: 19.6539 },
-                            { lat: 40.5812, lng: 26.6864 },
-                        ];
-                        const flightPath = new google.maps.Polyline({
-                            path: flightPlanCoordinates,
-                            geodesic: true,
-                            strokeColor: "#FF0000",
-                            strokeOpacity: 1.0,
-                            strokeWeight: 4,
-                        });
-
-                        flightPath.setMap(map);
-                    }
-
-                    window.initMap = initMap;
-                </script>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                        <img src="img/yelkovan-2.jpg" alt="Image" class="img-fluid">
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                        <img src="img/yelkovan-3.jpg" alt="Image" class="img-fluid">
+                    </div>
+                </div>
+                <br /><br />
+                <img src="img/yelkovan-info.png" alt="Image" class="img-fluid">
+                <br /><br />
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                        <img src="img/yelkovan-dagilim-1.jpg" alt="Image" class="img-fluid">
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                        <img src="img/yelkovan-dagilim-2.jpg" alt="Image" class="img-fluid">
+                    </div>
+                </div>
             </div>
-
         </div>
     </div> <!-- container-fluid, tm-container-content -->
 
