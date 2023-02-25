@@ -62,59 +62,39 @@
             <h2 class="col-12 tm-text-primary">Yılan Kartalı</h2>
         </div>
         <div class="row tm-mb-90">
-            <div class="col-xl-5 col-lg-7 col-md-6 col-sm-12">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
                 <img src="img/yilan_kartali.jpg" alt="Image" class="img-fluid">
                 <audio controls>
                     <source src="audio/yilan_kartali.mp3" type="audio/mpeg">
                     Tarayıcınız ses bileşenini desteklememektedir.
                 </audio>
+
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                        <img src="img/yilan_kartali-2.jpg" width="100%" height="100%">
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                        <img src="img/yilan_kartali-3.jpg" width="100%" height="100%">
+                    </div>
+                </div>
                 <p class="mb-4">
-                <h6>GENEL ÖZELLİKLER</h6><br>
-                İri, uzun kanatlı ve açık renkli bir yırtıcıdır. Balık kartalından daha büyük ve geniş kanatlıdır. Alttan başı ve kanat ucu koyu renkli, geri kalan kısımları beyaz üzerine enine koyu çizgilidir. Kuyruk ucu küttür, kuyruğunda enine 3-4 şerit bulunur. Seyrek ağaçlı açık arazide yaşar, yuvasını genellikle ağaç tepelerine kurar.
-                <br><br>
-                <h6>ÇANAKKALE DAĞILIŞI</h6>
-                C. gallicus bahar ve yaz aylarında az sayıda Kavak Deltası, Çardak Lagünü, Gökçeada ve Bozcaada’da gözlenmiştir. Göç dönemlerinde gruplar halinde en fazla sayıda geçiş yapan türlerden biridir. Genellikle seyrek ağaçlı açık arazide, oldukça alçak av uçuşuyla izlenen bu tür bölgemiz için Yaz ziyaretçisi ve Transit göçer bir türdür.
-                </p>
+                    <h6>GENEL ÖZELLİKLER</h6><br>
+                    İri, uzun kanatlı ve açık renkli bir yırtıcıdır. Balık kartalından daha büyük ve geniş kanatlıdır. Alttan başı ve kanat ucu koyu renkli, geri kalan kısımları beyaz üzerine enine koyu çizgilidir. Kuyruk ucu küttür, kuyruğunda enine 3-4 şerit bulunur. Seyrek ağaçlı açık arazide yaşar, yuvasını genellikle ağaç tepelerine kurar.
+                    <br><br>
+                    <h6>ÇANAKKALE DAĞILIŞI</h6>
+                    C. gallicus bahar ve yaz aylarında az sayıda Kavak Deltası, Çardak Lagünü, Gökçeada ve Bozcaada’da gözlenmiştir. Göç dönemlerinde gruplar halinde en fazla sayıda geçiş yapan türlerden biridir. Genellikle seyrek ağaçlı açık arazide, oldukça alçak av uçuşuyla izlenen bu tür bölgemiz için Yaz ziyaretçisi ve Transit göçer bir türdür.
+                    </p>
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                        <img src="img/yilan_kartali-dagilim-1.jpg" width="100%" height="100%">
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                        <img src="img/yilan_kartali-dagilim-2.jpg" width="100%" height="100%">
+                    </div>
+                </div>
             </div>
-            <div class="col-xl-7 col-lg-5 col-md-6 col-sm-12">
-
-                <div id="map"></div>
-                <!-- 
-                The `defer` attribute causes the callback to execute after the full HTML
-                document has been parsed. For non-blocking uses, avoiding race conditions,
-                and consistent behavior across browsers, consider loading using Promises
-                with https://www.npmjs.com/package/@googlemaps/js-api-loader.
-                -->
-                <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&v=weekly" defer></script>
-
-                <script>
-                    function initMap() {
-                        const map = new google.maps.Map(document.getElementById("map"), {
-                            zoom: 5,
-                            center: { lat: 40, lng: 26 },
-                            mapTypeId: "terrain",
-                        });
-                        const flightPlanCoordinates = [
-                            { lat: 42.718, lng: 24.356 },
-                            { lat: 40.565, lng: 26.845 },
-                            { lat: 38.839, lng: 27.282 },
-                            { lat: 30.646, lng: 29.034 },
-                        ];
-                        const flightPath = new google.maps.Polyline({
-                            path: flightPlanCoordinates,
-                            geodesic: true,
-                            strokeColor: "#FF0000",
-                            strokeOpacity: 1.0,
-                            strokeWeight: 4,
-                        });
-
-                        flightPath.setMap(map);
-                    }
-
-                    window.initMap = initMap;
-                </script>
-            </div>
-
         </div>
     </div> <!-- container-fluid, tm-container-content -->
 

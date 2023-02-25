@@ -62,60 +62,39 @@
             <h2 class="col-12 tm-text-primary">Kızılgerdan</h2>
         </div>
         <div class="row tm-mb-90">
-            <div class="col-xl-5 col-lg-7 col-md-6 col-sm-12">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
                 <img src="img/kizilgerdan.jpg" alt="Image" class="img-fluid">
                 <audio controls>
                     <source src="audio/kizilgerdan.mp3" type="audio/mpeg">
                     Tarayıcınız ses bileşenini desteklememektedir.
                 </audio>
+
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                        <img src="img/kizilgerdan-2.jpg" width="100%" height="100%">
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                        <img src="img/kizilgerdan-3.jpg" width="100%" height="100%">
+                    </div>
+                </div>
                 <p class="mb-4">
-                <h6>GENEL ÖZELLİKLER</h6><br>
-                Oldukça sevimli bir görünüşü olan türü halk arasında Nar bülbülü de denir. Üstü yeşilimsi kahverengi, altı kirli sarı, yüzü ve boynu kırmızımsı turuncudur. Gözü yuvarlak ve siyahtır. Bahçeler, ormanlar ve ağaçlık alanlarda gözlemlenebilir.
-                <br><br>
-                <h6>ÇANAKKALE DAĞILIŞI</h6>
-                E. rubecula kış aylarında tüm bölgede gözlemlenirken yaz aylarında yüksek bölgelerde daha az sayıda gözlemlenmiştir. Her türlü çalılık, ağaçlık, ormanlık arazide, parklarda ve yerleşimlerde gözlenen bu tür bölgemiz için Kış ziyaretçisi ve Yerli bir türdür.
-                </p>
+                    <h6>GENEL ÖZELLİKLER</h6><br>
+                    Oldukça sevimli bir görünüşü olan türü halk arasında Nar bülbülü de denir. Üstü yeşilimsi kahverengi, altı kirli sarı, yüzü ve boynu kırmızımsı turuncudur. Gözü yuvarlak ve siyahtır. Bahçeler, ormanlar ve ağaçlık alanlarda gözlemlenebilir.
+                    <br><br>
+                    <h6>ÇANAKKALE DAĞILIŞI</h6>
+                    E. rubecula kış aylarında tüm bölgede gözlemlenirken yaz aylarında yüksek bölgelerde daha az sayıda gözlemlenmiştir. Her türlü çalılık, ağaçlık, ormanlık arazide, parklarda ve yerleşimlerde gözlenen bu tür bölgemiz için Kış ziyaretçisi ve Yerli bir türdür.
+                    </p>
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                        <img src="img/kizilgerdan-dagilim-1.jpg" width="100%" height="100%">
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                        <img src="img/kizilgerdan-dagilim-2.jpg" width="100%" height="100%">
+                    </div>
+                </div>
             </div>
-            <div class="col-xl-7 col-lg-5 col-md-6 col-sm-12">
-
-                <div id="map"></div>
-                <!-- 
-                The `defer` attribute causes the callback to execute after the full HTML
-                document has been parsed. For non-blocking uses, avoiding race conditions,
-                and consistent behavior across browsers, consider loading using Promises
-                with https://www.npmjs.com/package/@googlemaps/js-api-loader.
-                -->
-                <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&v=weekly" defer></script>
-
-                <script>
-                    function initMap() {
-                        const map = new google.maps.Map(document.getElementById("map"), {
-                            zoom: 4,
-                            center: { lat: 40, lng: 26 },
-                            mapTypeId: "terrain",
-                        });
-                        const flightPlanCoordinates = [
-                            { lat: 37.7056, lng: 21.2460 },
-                            { lat: 44.1961, lng: 15.0602 },
-                            { lat: 47.6445, lng: 32.1753 },
-                            { lat: 40.9505, lng: 44.6884 },
-                            { lat: 37.7056, lng: 21.2460 },
-                        ];
-                        const flightPath = new google.maps.Polyline({
-                            path: flightPlanCoordinates,
-                            geodesic: true,
-                            strokeColor: "#FF0000",
-                            strokeOpacity: 1.0,
-                            strokeWeight: 4,
-                        });
-
-                        flightPath.setMap(map);
-                    }
-
-                    window.initMap = initMap;
-                </script>
-            </div>
-
         </div>
     </div> <!-- container-fluid, tm-container-content -->
 
