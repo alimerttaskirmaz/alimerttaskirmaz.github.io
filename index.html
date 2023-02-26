@@ -51,30 +51,35 @@
     <div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" data-image-src="img/hero.png">
     </div>
 
-    <div id="app_h5p"></div>
-    <script type="text/javascript">
-        const {
-        H5P
-      } = H5PStandalone;
-      console.log("başla");
-      async function setup() {
-        await new H5P(document.getElementById('app_h5p'),
-                {
-                  h5pJsonPath: 'memory-game-5-708',
-                  frameJs: 'js/frame.bundle.js',
-                  frameCss: 'css/h5p.css'
-                });
-      }
-      console.log("gel");
-      setup();
-    </script>
 
-    <div class="container-fluid tm-container-content tm-mt-60">
+
+    <div >
+        <div class="row mb-4">
+            <div id="app_h5p"></div>
+        <script type="text/javascript">
+            const {
+            H5P
+          } = H5PStandalone;
+          console.log("başla");
+          async function setup() {
+            await new H5P(document.getElementById('app_h5p'),
+                    {
+                      h5pJsonPath: 'hafiza_oyunu',
+                      frameJs: 'js/frame.bundle.js',
+                      frameCss: 'css/h5p.css'
+                    });
+          }
+          console.log("gel");
+          setup();
+        </script>
+        </div>
+        
         <div class="row mb-4">
             <h2 class="col-6 tm-text-primary">
                 En çok takip edilen kuşlar
             </h2>
         </div>
+        
         <div class="row tm-mb-90 tm-gallery">
         	<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
                 <figure class="effect-ming tm-video-item">
