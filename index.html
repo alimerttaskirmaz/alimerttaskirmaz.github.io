@@ -55,7 +55,8 @@
 
     <div >
         <div class="row mb-4">
-            <div id="app_h5p"></div>
+        <div id="app_h5p"></div>
+        <div id="app_h5p_2"></div>
         <script type="text/javascript">
             const {
             H5P
@@ -67,6 +68,12 @@
                       h5pJsonPath: 'hafiza_oyunu',
                       frameJs: 'js/frame.bundle.js',
                       frameCss: 'css/h5p.css'
+                    });
+            await new H5P(document.getElementById('app_h5p_2'),
+                    {
+                        h5pJsonPath: 'video_1',
+                        frameJs: 'js/frame.bundle.js',
+                        frameCss: 'css/h5p.css'
                     });
           }
           console.log("gel");
