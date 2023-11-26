@@ -59,78 +59,45 @@
     <div class="row tm-mb-90 tm-gallery">
         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
             <figure class="effect-ming tm-video-item">
-                <img src="img/yelkovan.jpg" alt="Image" class="img-fluid">
+                <img src="img/kutup_sumrusu.jpg" alt="Image" class="img-fluid">
                 <figcaption class="d-flex align-items-center justify-content-center">
-                    <h2>Yelkovan</h2>
-                    <a href="yelkovan.html">Detaya git</a>
+                    <h2>Kutup Sumrusu</h2>
+                    <a href="kutup_sumrusu.html">Detaya git</a>
                 </figcaption>                    
             </figure>
         </div>
         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
             <figure class="effect-ming tm-video-item">
-                <img src="img/mavi_bastankara.jpg" alt="Image" class="img-fluid">
+                <img src="img/kizilgerdanli_dalgic.jpg" alt="Image" class="img-fluid">
                 <figcaption class="d-flex align-items-center justify-content-center">
-                    <h2>Mavi Baştankara</h2>
-                    <a href="mavi_bastankara.html">Detaya git</a>
+                    <h2>Kızılgerdanlı Dalgıç</h2>
+                    <a href="kizilgerdanli_dalgic.html">Detaya git</a>
                 </figcaption>                    
             </figure>
         </div>
         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
             <figure class="effect-ming tm-video-item">
-                <img src="img/leylek.jpg" alt="Image" class="img-fluid">
+                <img src="img/alaca_kirazkusu.jpg" alt="Image" class="img-fluid">
                 <figcaption class="d-flex align-items-center justify-content-center">
-                    <h2>Leylek</h2>
-                    <a href="leylek.html">Detaya git</a>
+                    <h2>Alaca Kirazkuşu</h2>
+                    <a href="alaca_kirazkusu.html">Detaya git</a>
                 </figcaption>                    
             </figure>
         </div>
     </div>
 
+    <div class="row mb-4 align-items-center">
+        <h2 class="col-12 tm-text-primary" style="text-align: center;">
+            Kutup Kuşları Bil Bakalım
+        </h2>
+        <div id="app_h5p_4" style="width: 75%; margin: 0 auto;"></div>
+        <h2 class="col-12 tm-text-primary" style="text-align: center;">
+            Kutup Kuşları Hafıza Oyunu
+        </h2>
+        <div id="app_h5p_5"></div>
+    </div>
+
     <div>
-        <div class="row mb-4 align-items-center">
-            <h2 class="col-12 tm-text-primary" style="text-align: center;">
-                Bil Bakalım
-            </h2>
-            <div id="app_h5p_2" style="width: 75%; margin: 0 auto;"></div>
-            <div id="app_h5p_2" style="width: 75%; margin: 0 auto;"></div>
-            <h2 class="col-12 tm-text-primary" style="text-align: center;">
-                Hafıza Oyunu
-            </h2>
-            <div id="app_h5p"></div>
-            <h2 class="col-12 tm-text-primary" style="text-align: center;">
-                Bil Bakalım - 2. Seviye
-            </h2>
-            <div id="app_h5p_3" style="width: 75%; margin: 0 auto;"></div>
-            <script type="text/javascript">
-                const {
-                H5P
-            } = H5PStandalone;
-            console.log("başla");
-            async function setup() {
-                await new H5P(document.getElementById('app_h5p'),
-                        {
-                        h5pJsonPath: 'hafiza_oyunu',
-                        frameJs: 'js/frame.bundle.js',
-                        frameCss: 'css/h5p.css'
-                        });
-                await new H5P(document.getElementById('app_h5p_2'),
-                        {
-                            h5pJsonPath: 'video_1',
-                            frameJs: 'js/frame.bundle.js',
-                            frameCss: 'css/h5p.css'
-                        });
-                await new H5P(document.getElementById('app_h5p_3'),
-                        {
-                            h5pJsonPath: 'video_2',
-                            frameJs: 'js/frame.bundle.js',
-                            frameCss: 'css/h5p.css'
-                        });
-            }
-            console.log("gel");
-            setup();
-            </script>
-        </div>
-        
         <div class="row mb-4">
             <h2 class="col-12 tm-text-primary" style="text-align: center;">
                 En çok gözlemlenen kuşlar
@@ -431,6 +398,60 @@
                 <a href="javascript:void(0);" class="btn btn-primary tm-btn-next">Next Page</a>
             </div>            
         </div> -->
+        <div class="row mb-4 align-items-center">
+            <h2 class="col-12 tm-text-primary" style="text-align: center;">
+                Bil Bakalım
+            </h2>
+            <div id="app_h5p_2" style="width: 75%; margin: 0 auto;"></div>
+            <h2 class="col-12 tm-text-primary" style="text-align: center;">
+                Hafıza Oyunu
+            </h2>
+            <div id="app_h5p"></div>
+            <h2 class="col-12 tm-text-primary" style="text-align: center;">
+                Bil Bakalım - 2. Seviye
+            </h2>
+            <div id="app_h5p_3" style="width: 75%; margin: 0 auto;"></div>
+            <script type="text/javascript">
+                const {
+                H5P
+            } = H5PStandalone;
+            console.log("başla");
+            async function setup() {
+                await new H5P(document.getElementById('app_h5p'),
+                        {
+                        h5pJsonPath: 'hafiza_oyunu',
+                        frameJs: 'js/frame.bundle.js',
+                        frameCss: 'css/h5p.css'
+                        });
+                await new H5P(document.getElementById('app_h5p_2'),
+                        {
+                            h5pJsonPath: 'video_1',
+                            frameJs: 'js/frame.bundle.js',
+                            frameCss: 'css/h5p.css'
+                        });
+                await new H5P(document.getElementById('app_h5p_3'),
+                        {
+                            h5pJsonPath: 'video_2',
+                            frameJs: 'js/frame.bundle.js',
+                            frameCss: 'css/h5p.css'
+                        });
+                await new H5P(document.getElementById('app_h5p_4'),
+                        {
+                            h5pJsonPath: 'video_3',
+                            frameJs: 'js/frame.bundle.js',
+                            frameCss: 'css/h5p.css'
+                        });
+                await new H5P(document.getElementById('app_h5p_5'),
+                        {
+                            h5pJsonPath: 'hafiza_oyunu_kutup',
+                            frameJs: 'js/frame.bundle.js',
+                            frameCss: 'css/h5p.css'
+                        });
+            }
+            console.log("gel");
+            setup();
+            </script>
+        </div>
     </div> <!-- container-fluid, tm-container-content -->
 
     <footer class="tm-bg-gray pt-5 pb-3 tm-text-gray tm-footer">
